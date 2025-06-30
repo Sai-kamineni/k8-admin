@@ -4,20 +4,25 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::315069654700:role/eksctl-expense-nodegroup-expense-NodeInstanceRole-s5iLLwbCscFS
+      rolearn: arn:aws:iam::296062553644:role/eksctl-expense-nodegroup-expense-NodeInstanceRole-hrrRsvvR1swn
       username: system:node:{{EC2PrivateDNSName}}
-  mapUsers: |
-    - groups:
+  mapUsers:
+    - groups:  
       - expense-trainee
-      userarn: arn:aws:iam::315069654700:user/suresh
-      username: suresh
+      userarn: arn:aws:iam::296062553644:user/Suresh
+      username: Suresh
     - groups:
       - expense-admin
-      userarn: arn:aws:iam::315069654700:user/ramesh
-      username: ramesh
+      userarn: arn:aws:iam::296062553644:user/Suresh
+      username: ramesh    
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2024-11-06T02:05:11Z"
+  creationTimestamp: "2025-06-30T05:01:52Z"
   name: aws-auth
   namespace: kube-system
-  uid: 7c41c4b2-f380-4fe0-91b7-6035fd37f2dc
+  uid: a20bfb88-9af7-4a87-9292-a74cd3a80bb3
+
+
+
+
+
