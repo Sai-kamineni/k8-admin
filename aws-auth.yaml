@@ -6,7 +6,7 @@ data:
       - system:nodes
       rolearn: arn:aws:iam::296062553644:role/eksctl-expense-nodegroup-expense-NodeInstanceRole-hrrRsvvR1swn
       username: system:node:{{EC2PrivateDNSName}}
-  mapUsers:
+  mapUsers:                          # we append this part
     - groups:  
       - expense-trainee
       userarn: arn:aws:iam::296062553644:user/Suresh
